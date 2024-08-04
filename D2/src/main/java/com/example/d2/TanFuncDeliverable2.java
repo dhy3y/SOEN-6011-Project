@@ -11,7 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class Deliverable2 extends Application {
+public class TanFuncDeliverable2 extends Application {
 
     public static void main(String[] args) {
         launch(args);
