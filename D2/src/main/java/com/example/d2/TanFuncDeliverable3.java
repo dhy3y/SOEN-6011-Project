@@ -13,9 +13,9 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 /**
- * TanFuncDeliverable3.
+ * TanFuncDeliverable3 - Tangent Calculator.
  *
- * @version 1.0.0
+ * @version 1.1.2
  */
 public class TanFuncDeliverable3 extends Application {
   /**
