@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 /**
  * TanFuncDeliverable3 - Tangent Calculator.
  *
- * @version 1.1.2
+ * @version 1.2.0
  */
 public class TanFuncDeliverable3 extends Application {
   /**
@@ -138,7 +138,7 @@ public class TanFuncDeliverable3 extends Application {
     // Clear button
     Button clearButton = new Button("Clear");
     clearButton.setMinWidth(MIN_WIDTH);
-    clearButton.setStyle("-fx-font-size: 14px; -fx-background-color: #f44336;"
+    clearButton.setStyle("-fx-font-size: 14px; -fx-background-color: #0000FF;"
         + "-fx-text-fill: white;");
     GridPane.setConstraints(clearButton, 0, ROW);
 
@@ -147,9 +147,19 @@ public class TanFuncDeliverable3 extends Application {
       outputField.clear();
     });
 
+    // Exit button
+    Button exitButton = new Button("Exit");
+    exitButton.setMinWidth(MIN_WIDTH);
+    exitButton.setStyle("-fx-font-size: 14px; -fx-background-color: #f44336;"
+        + "-fx-text-fill: white;");
+    GridPane.setConstraints(exitButton, 2, ROW);
+    exitButton.setOnAction(e ->
+        primaryStage.close()
+    );
+
     // Adding components
-    grid.getChildren().addAll(titleLabel, inputLabel,
-        inputField, outputLabel, outputField, calcButton, clearButton);
+    grid.getChildren().addAll(titleLabel, inputLabel, inputField,
+        outputLabel, outputField, calcButton, clearButton, exitButton);
 
     Scene scene = new Scene(grid, SCENE_WIDTH, SCENE_HEIGHT);
     primaryStage.setScene(scene);

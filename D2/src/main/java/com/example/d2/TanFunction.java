@@ -3,7 +3,7 @@ package com.example.d2;
 /**
  * TanFunction class.
  *
- * @version 1.1.2
+ * @version 1.2.0
  */
 public final class TanFunction {
   /**
