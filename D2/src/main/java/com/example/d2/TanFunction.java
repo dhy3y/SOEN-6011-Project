@@ -83,7 +83,7 @@ public final class TanFunction {
       val = x;
     }
     if (x < 0) {
-      val = integerPart - 1;
+      val = integerPart - 1.0;
     } else {
       val = integerPart;
     }

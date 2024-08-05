@@ -54,6 +54,10 @@ public class TanFuncDeliverable3 extends Application {
    * Height of the Scene.
    */
   private static final int SCENE_HEIGHT = 250;
+  /**
+   * CSS text fill.
+   */
+  private static final String CSS_TEXT_FILL = "-fx-text-fill: #333333;";
 
   /**
    * Main method.
@@ -82,14 +86,14 @@ public class TanFuncDeliverable3 extends Application {
     // Title
     Label titleLabel = new Label("Tangent Calculator");
     titleLabel.setStyle("-fx-font-size: 24px; -fx-font-weight: bold; "
-        + "-fx-text-fill: #333333;");
+        + CSS_TEXT_FILL);
     GridPane.setConstraints(titleLabel, 0, 0, 2, 1);
     titleLabel.setAlignment(Pos.CENTER);
 
     // Input
     Label inputLabel = new Label("Enter angle in radians:");
     inputLabel.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;"
-        + "-fx-text-fill: #333333;");
+        + CSS_TEXT_FILL);
     GridPane.setConstraints(inputLabel, 0, 1);
 
     TextField inputField = new TextField();
@@ -100,7 +104,7 @@ public class TanFuncDeliverable3 extends Application {
     // Output
     Label outputLabel = new Label("Tangent:");
     outputLabel.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;"
-        + "-fx-text-fill: #333333;");
+        + CSS_TEXT_FILL);
     GridPane.setConstraints(outputLabel, 0, 2);
 
     TextField outputField = new TextField();

@@ -157,21 +157,21 @@ public class TanFuncDeliverable2 extends Application {
      *
      */
     private static double normalize(double x) {
-        double PI = 3.14159265358979323846;
-        int integerPart = (int) ((x + PI) / (2 * PI));
+        double piValue = 3.14159265358979323846;
+        int integerPart = (int) ((x + piValue) / (2 * piValue));
         double val;
 
         if (x == integerPart) {
             val = x;
         }
         if (x < 0) {
-            val = integerPart - 1;
+            val = integerPart - 1.0;
         }
         else {
             val = integerPart;
         }
 
-        return x - 2 * PI * val;
+        return x - 2 * piValue * val;
     }
 
     /**
