@@ -1,4 +1,4 @@
-package com.example.d2;
+package com.example.d3;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -87,6 +87,7 @@ public class TanFuncDeliverable3 extends Application {
     Label titleLabel = new Label("Tangent Calculator");
     titleLabel.setStyle("-fx-font-size: 24px; -fx-font-weight: bold; "
         + CSS_TEXT_FILL);
+    titleLabel.setAccessibleText("Title: Tangent Calculator");
     GridPane.setConstraints(titleLabel, 0, 0, 2, 1);
     titleLabel.setAlignment(Pos.CENTER);
 
@@ -94,17 +95,20 @@ public class TanFuncDeliverable3 extends Application {
     Label inputLabel = new Label("Enter angle in radians:");
     inputLabel.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;"
         + CSS_TEXT_FILL);
+    inputLabel.setAccessibleText("Label: Enter angle in radians");
     GridPane.setConstraints(inputLabel, 0, 1);
 
     TextField inputField = new TextField();
     inputField.setPromptText("e.g., 0.0");
     inputField.setStyle("-fx-font-size: 14px;");
+    inputField.setAccessibleText("Input field for angle in radians");
     GridPane.setConstraints(inputField, 1, 1);
 
     // Output
     Label outputLabel = new Label("Tangent:");
     outputLabel.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;"
         + CSS_TEXT_FILL);
+    outputLabel.setAccessibleText("Label: Tangent result");
     GridPane.setConstraints(outputLabel, 0, 2);
 
     TextField outputField = new TextField();
@@ -112,6 +116,7 @@ public class TanFuncDeliverable3 extends Application {
     outputField.setStyle("-fx-font-size: 18px; -fx-font-weight: bold; "
         + "-fx-text-fill: #008CBA; -fx-background-color: #f0f0f0;");
     outputField.setPrefHeight(PREF_HEIGHT);
+    outputField.setAccessibleText("Output field for tangent result");
     GridPane.setConstraints(outputField, 1, 2);
 
 
@@ -120,6 +125,7 @@ public class TanFuncDeliverable3 extends Application {
     calcButton.setMinWidth(MIN_WIDTH);
     calcButton.setStyle("-fx-font-size: 14px; "
         + "-fx-background-color: #4CAF50; -fx-text-fill: white;");
+    calcButton.setAccessibleText("Calculate button");
     GridPane.setConstraints(calcButton, COL, ROW);
 
     calcButton.setOnAction(e -> {
@@ -140,6 +146,7 @@ public class TanFuncDeliverable3 extends Application {
     clearButton.setMinWidth(MIN_WIDTH);
     clearButton.setStyle("-fx-font-size: 14px; -fx-background-color: #0000FF;"
         + "-fx-text-fill: white;");
+    clearButton.setAccessibleText("Clear button");
     GridPane.setConstraints(clearButton, 0, ROW);
 
     clearButton.setOnAction(e -> {
@@ -152,6 +159,7 @@ public class TanFuncDeliverable3 extends Application {
     exitButton.setMinWidth(MIN_WIDTH);
     exitButton.setStyle("-fx-font-size: 14px; -fx-background-color: #f44336;"
         + "-fx-text-fill: white;");
+    exitButton.setAccessibleText("Exit button");
     GridPane.setConstraints(exitButton, 2, ROW);
     exitButton.setOnAction(e ->
         primaryStage.close()

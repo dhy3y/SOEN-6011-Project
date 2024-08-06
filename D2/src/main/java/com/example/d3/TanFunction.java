@@ -1,4 +1,4 @@
-package com.example.d2;
+package com.example.d3;
 
 /**
  * TanFunction class.
